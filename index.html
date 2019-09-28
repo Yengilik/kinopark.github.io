@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="style.css">
+	<script src="jquery-3.4.1.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title> Kinopark </title>
+</head>
+<body>
+     <div class="topnav" id="myTopnav">
+     <div id="logo">
+		<img src="images/logos.png">
+	</div>
+	<div class="dropdown">
+  <button class="dropbtn" id="droptd"><img id="loc" src="images/map.png"> Алматы <img id="down" src="images/down.png"> </button>
+  <div class="dropdown-content" >
+  <a href="#" class="city" >Нур-Султан</a>
+  <a href="#" class="city active" >Алматы</a>
+  <a href="#" class="city">Шымкент</a>
+  </div>
+  </div>
+  <a class="menu active" href="#schedule" >Расписание</a>
+  <rectangle class="rec2"></rectangle>
+  <a class="menu" href="#soon">Скоро</a>
+  <a class="menu" href="#food">Еда и напитки</a>
+  <a class="menu" href="#Kinopark">Мой Kinopark</a>
+  <a  href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+   <a class="menu" id="login" href="#login">Вход/Регистрация</a>
+   <div class="dropdown">
+  <button class="dropbtn" id="lang"> Рус <img id="down" src="images/down.png"> </button>
+  <div class="dropdown-content">
+  <a class="dropA active" onclick="cities()" href="#">Рус</a>
+  <a class="dropA" onclick="cities()" href="#">Каз</a>
+  <a class="dropA" href="#">Eng</a>
+  </div>
+  </div>
+</div>
+
+<hr id="h">
+   <div class="space">
+   </div>
+   <div class="movies">
+      <p class="textmv">Фильмы</p>
+     <p class="textm">Сегодня в кино</p>
+     <p class="textm">Предпродажи</p>
+     <p class="imax">Фильмы в <img id="imax" src="images/imax.png"></p>
+   </div>
+   <div class="exclusive">
+     <p class="textmv">Эксклюзив</p>
+     <p class="textm">Театр в кино</p>
+     <p class="textm">Original version</p>
+     <p class="textm">Концерты и фестивали</p>
+     <p class="textm">Документальное кино</p>
+   </div>
+   <div class="vl"></div>
+   <div class="today">
+     <p class="tex">Сегодня в кино</p>
+     <p class="sessions">Все сеансы <img src="images/Line.png"></p>
+     <div class="mv"><img src="images/lion.png"><p class="des">Король лев</p></div>
+     <div class="mv"><img src="images/mv2.png"><p class="des">Та еще парочка</p></div>
+     <div class="mv"><img src="images/toy.png"><p class="des">История игрушек</p></div>
+     <div class="mv"><img src="images/dream.png"><p class="des">За мечтой</p></div>
+   </div>
+   <div class="space"></div>
+</body>
+<script type="text/javascript">
+  function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+   alert("onclick Event triggered!");
+}
+	$(document).on("click","#b",function(){
+		alert('yes');
+	})
+	$('body').on('click','.b',function(){
+		alert('hafijv');
+		$(this).addClass('active').siblings().removeClass('active')
+	})
+
+var header = document.getElementById("dropdown-content");
+var btns = header.getElementsByClassName("city");
+alert("jnscfm");
+for (var i = 0; i < btns.length; i++) {
+	alert("bla");
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("activee");
+  current[0].className = current[0].className.replace(" activee", "");
+  this.className += " activee";
+  });
+}
+
+</script>
+</html>
