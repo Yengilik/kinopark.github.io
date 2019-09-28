@@ -22,19 +22,16 @@ body {
   font-style:normal;
   line-height: 18px;
   font-weight: bold;
-
+  border-bottom:3px solid transparent;
 }
 
 .topnav .menu:hover {
   color: #ff5656;
   border-width: 2px;
   border-bottom-color:#ff5656;
-
+  border-bottom:3px solid #ff5656;
 }
 
-.menu.active {
-  color: red;
-}
 
 .topnav .icon {
   display: none;
@@ -49,10 +46,12 @@ body {
   #logo{
   	margin-left:-10px;
   	float:left;
+  	height:27.76px;
+  	width:98px;
   }
   .dropdown{
   	margin-top:-50px;
-  	margin-left:120px;
+  	margin-left:150px;
   }
 
 }
@@ -122,9 +121,17 @@ body {
   font-style:normal;
   font-weight:normal;
   font-size:16px;
+  border-left:3px solid transparent;
+  border-bottom:0.5px solid #B2B4B0;
+
 }
 
-.dropdown-content a:hover {background-color: #C31D28; color:white;}
+.dropdown-content a:hover {background-color: #C31D28; color:white; border-bottom:0.5px solid transparent;
+	
+}
+.dropdown-content .active{
+	border-left:3px solid #C31D28;
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -167,9 +174,14 @@ body {
 }
 
  .active {
- 	color:red;
+ 	color:#ff5656;
  	border-left-color: red;
  	
+ }
+ .topnav .active:not(.city):not(.dropA) {
+    color:#ff5656;
+    border-bottom:3px solid #ff5656;
+
  }
  
  .rec2{
@@ -275,6 +287,9 @@ body {
     font-weight: bold;
     text-align:center;
     margin-left:-38px;
+}
+.hidden{
+	display:none;
 }
 
 
