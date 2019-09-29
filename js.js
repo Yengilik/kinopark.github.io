@@ -1,5 +1,12 @@
-function my(){
-	alert("DGBGWHb");
+
+ var header = document.getElementsById("myTopnav");
+var btns = header.getElementsByClassName("menu");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
 }
 function myFunction() {
   var x = document.getElementById("myTopnav");
@@ -8,24 +15,8 @@ function myFunction() {
   } else {
     x.className = "topnav";
   }
-   alert("onclick Event triggered!");
 }
-function my(){
-	alert("DGBGWHb");
-}
-document.getElementById('d').onclick = function() {
-   alert("button was clicked");
-}​;​
 
-var header = document.getElementById("droptd");
-var btns = header.getElementsByClassName("city");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-  var current = document.getElementsByClassName("active");
-  current[0].className = current[0].className.replace(" active", "");
-  this.className += " active";
-  });
-}
 
  
 

@@ -291,5 +291,143 @@ body {
 .hidden{
 	display:none;
 }
+.tex2{
+	padding-left:100px;
+   float:left;
+   width:50%;
+   color:white;
+ 	font-size: 16px;
+  font-style:normal;
+  line-height: 22px;
+  font-weight: bold;
+}
+.sessions2{
+  float:right;
+  width:40%;
+  color:white;
+ 	font-size: 13px;
+  font-style:normal;
+  line-height: 22px;
+  font-weight: normal;
+  text-align:center;
+}
+.soonmovie{
+	float:left;
+	width:100%;
+	color:white;
+	padding-left:10%;
+	padding-right:10%;
+	font-weight:normal;
+	font-style:normal;
+	font-size:13px;
+	line-height: 22px;
+	text-align:center;
+}
+.soonmovies{
+  float:left;
+  width:10%;
+  position:relative;
+}
+.presale{
+	background:#FFD362;
+	border-radius:3px 0px 0px 3px;
+	color:black;
+	font-style:normal;
+	font-weight:bold;
+	font-size:10px;
+	line-height:14px;
+	width:90px;
+	height:20px;
+	padding-top:5px;
+	text-align:center;
+	position:absolute;
+	left:23px;
+	top:0px;
+}
+.rhombus{
+	background-color:#FFD362;
+	position:absolute;
+	width:20px;
+	height:20px;
+	border-radius:2px;
+	transform: scaleX(.9) rotate(45deg);
+	top:125px;
+	left:15px;
+}
+.age{
+	position:absolute;
+    color:#0E0E0E;
+    font-style:normal;
+	font-weight:bold;
+	font-size:10px;
+	line-height:14px;
+	top:118px;
+	left:18px;
+}
+.date{
+	background-color:#C31D28;
+	color:white;
+	border-radius:3px 0px 0px 3px;
+	font-style:normal;
+	font-weight:bold;
+	font-size:10px;
+	line-height:14px;
+	width:70px;
+	height:20px;
+	padding-top:5px;
+	text-align:center;
+	position:absolute;
+	top:122px;
+	left:43px;
+}
+.sooncl{
+	width:100%;
+	left:20%;
+	right:20%;
+	color:#FFD362;
+	font-style:normal;
+	font-weight:bold;
+	font-size:48px;
+	line-height:65px;
+	text-align: center;
+	padding-top:70px;
+}
+.offer{
+	float:left;
+	width:22%;
+}
+.service{
+	float:left;
+	width:22%;
+}
+.questions{
+	float:left;
+	width:20%;
+	padding-right:33px;
+}
+.aboutus{
+	float:left;
+	width:17%;
+}
+.mykino{
+	
+}
+.subs{
+	color:#FFD362;
+	float:left;
+}
+.pass{
+	color:#FFD362;
+	font-weight:bold;
+	float:left;
+	top:130px;
+	left:50px;
+	padding-left:3px;
+}
+.num{
+	color:white;
+	font-size:20px;
+}
+
 
 
